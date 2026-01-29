@@ -1,0 +1,82 @@
+body { 
+    font-family: 'Poppins', sans-serif; /* font sito */
+    background-color: #1a1b38;         /* Colore sfondo */
+    color: #ffffff;                    /* Colore del testo grande */
+    scroll-behavior: smooth;           /* Animazione */
+}
+
+.navbar {
+    transition: top 0.3s; /* transizione fluida per scomparsa/compare */
+}
+
+.navbar .nav-link {
+    color: #ffffff;   /* colore navbar */
+    font-weight: 500; /* grassetto */
+}
+
+.navbar .nav-link:hover {
+    color: #ff007c;   /* colore passaggio del mouse */
+}
+
+.navbar .navbar-brand {
+    color: #ffffff;   /* colore del brand */
+}
+
+.navbar .navbar-brand:hover {
+    color: #ff007c;   /* colore passaggio del mouse */
+}
+
+h1, h2, h3, h4 {
+    color: #ffffff;  /* Colore titoli */
+    font-weight: 700; /* grassetto */
+    margin-bottom: 20px; /* margine */
+}
+
+section {
+    padding-top: 60px;  /* Spazio superiore */
+    padding-bottom: 60px; /* Spazio inferiore */
+}
+
+.project-card {
+    border-radius: 10px;        /* Angoli arrotondati */
+    overflow: hidden;            /* Taglia le immagini */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animazione */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* animazione con mouse */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* ombra */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* arrotonda i bordi dell'immagine o model-viewer */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* leggera ombra */
+    opacity: 1; /* modifica fatta per far vedere subito l'immagine e model-viewer */
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+footer {
+    background-color: #1a1b38; /* Colore */
+    color: #ffffff;           /* Testo */
+}
+
+footer button#themeToggle {
+    margin-left: 10px;       /* Spazio tra testo e pulsante */
+}
+
+body[data-theme="#blue"] {
+    background-color: #1a1b38; /* Sfondo */
+    color: #f8f9fa;            /* Testo */
+}
+
+body[data-theme="#blue"] a {
+    color: #ffffff;             /* Colore link */
+}
