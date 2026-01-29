@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,33 +12,37 @@
   <!-- CSS mio -->
   <link rel="stylesheet" href="css/style.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.0/gsap.min.js"></script>
-  <!-- ScrollMagic -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
-</head>
-<body>
-  
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.0/gsap.min.js"></script>
+ --> <!-- ScrollMagic -->
+
+  <!--   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script> 
+  -->
+
 </head>
 
+<body>
+
+  </head>
+
   <!-- Navbar -->
- <header class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">Portfolio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">Chi sono</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Progetti</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contatti</a></li>
-      </ul>
+  <header class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Chi sono</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Progetti</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contatti</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
   <!-- MAIN -->
   <main class="mt-5 pt-5">
@@ -49,26 +54,26 @@
         <div class="col-md-6">
           <h1 class="mb-3">About me</h1>
           <p>La mia passione per la grafica
-pubblicitaria nasce da lontano,
-dai giorni in cui, da bambina, mi
-perdevo tra matite colorate e fogli
-bianchi, immaginando mondi e
-storie da raccontare visivamente.
-Crescendo, questa passione si è
-trasformata in una vera e propria
-vocazione: il design è diventato
-il mio linguaggio, il modo in
-cui connetto idee, emozioni e
-persone. Ogni progetto che
-creo è intriso di questa energia
-creativa che mi guida, un mix di
-curiosità e amore per il bello che
-mi spinge sempre a cercare nuove
-forme di espressione. Per me, la
-grafica pubblicitaria non è solo un
-mestiere, ma un’estensione della
-mia anima artistica e della mia
-voglia di comunicare. </p>
+            pubblicitaria nasce da lontano,
+            dai giorni in cui, da bambina, mi
+            perdevo tra matite colorate e fogli
+            bianchi, immaginando mondi e
+            storie da raccontare visivamente.
+            Crescendo, questa passione si è
+            trasformata in una vera e propria
+            vocazione: il design è diventato
+            il mio linguaggio, il modo in
+            cui connetto idee, emozioni e
+            persone. Ogni progetto che
+            creo è intriso di questa energia
+            creativa che mi guida, un mix di
+            curiosità e amore per il bello che
+            mi spinge sempre a cercare nuove
+            forme di espressione. Per me, la
+            grafica pubblicitaria non è solo un
+            mestiere, ma un’estensione della
+            mia anima artistica e della mia
+            voglia di comunicare. </p>
         </div>
 
         <!-- Colonna immagine -->
@@ -78,63 +83,66 @@ voglia di comunicare. </p>
       </div>
     </section>
 
-   <!-- Progetti -->
- <section id="projects" class="container py-5">
+    <!-- Progetti -->
+    <section id="projects" class="container py-5">
       <h1 class="mb-4">Progetti</h1>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="card project-card">
-          <model-viewer 
-        alt="Caffettiera 3D"
-        src="img/caffettiera.glb"
-        ar
-        environment-image="shared-assets/environments/moon_1k.hdr"
-        poster="shared-assets/models/NeilArmstrong.webp"
-        shadow-intensity="1"
-        camera-controls
-        touch-action="pan-y">
-    </model-viewer>
+
+            <model-viewer
+              alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+              src="img/caffettiera.glb" 
+              ar 
+              poster="img/caffettiera.jpeg" 
+              shadow-intensity="1" 
+              camera-controls
+              touch-action="pan-y"
+              ></model-viewer>
+
+
+
             <div class="card-body">
               <h5 class="card-title">Caffettiera</h5>
               <p class="card-text">Progetto 3D brevettato di una caffettiera caratterizzata
-da decorazioni a forma di diamante, che uniscono
-eleganza e funzionalità. Il design contemporaneo valorizza
-la superficie dell’oggetto, trasformando un elemento
-quotidiano in un pezzo distintivo e raffinato. La cura dei
-dettagli e la geometria stilizzata conferiscono un impatto
-visivo unico, rendendo la caffettiera un oggetto pratico ma
-dal forte carattere estetico.</p>
+                da decorazioni a forma di diamante, che uniscono
+                eleganza e funzionalità. Il design contemporaneo valorizza
+                la superficie dell’oggetto, trasformando un elemento
+                quotidiano in un pezzo distintivo e raffinato. La cura dei
+                dettagli e la geometria stilizzata conferiscono un impatto
+                visivo unico, rendendo la caffettiera un oggetto pratico ma
+                dal forte carattere estetico.</p>
             </div>
           </div>
         </div>
 
-    <!-- Progetto 2 -->
-    <div class="col-md-4">
-      <div class="card project-card">
-        <img src="img/immagine.jpeg" class="card-img-top" alt="Progetto 2">
-        <div class="card-body">
-          <h5 class="card-title">Progetto 2</h5>
-          <p class="card-text">Descrizione </p>
+        <!-- Progetto 2 -->
+        <div class="col-md-4">
+          <div class="card project-card">
+            <img src="img/immagine.jpeg" class="card-img-top" alt="Progetto 2">
+            <div class="card-body">
+              <h5 class="card-title">Progetto 2</h5>
+              <p class="card-text">Descrizione </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Progetto 3 -->
-    <div class="col-md-4">
-      <div class="card project-card">
-        <img src="img/immagine.jpeg" class="card-img-top" alt="Progetto 3">
-        <div class="card-body">
-          <h5 class="card-title">Progetto 3</h5>
-          <p class="card-text">Descrizione </p>
+        <!-- Progetto 3 -->
+        <div class="col-md-4">
+          <div class="card project-card">
+            <img src="img/immagine.jpeg" class="card-img-top" alt="Progetto 3">
+            <div class="card-body">
+              <h5 class="card-title">Progetto 3</h5>
+              <p class="card-text">Descrizione </p>
+            </div>
+          </div>
         </div>
+
       </div>
-    </div>
-
-  </div>
-</section>
+    </section>
 
 
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 
     <!-- Contatti -->
     <section id="contact" class="container py-5">
@@ -154,4 +162,5 @@ dal forte carattere estetico.</p>
   <!-- JS personalizzato -->
   <script src="js/app.js"></script>
 </body>
+
 </html>
