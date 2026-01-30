@@ -1,4 +1,4 @@
-// Controllore ScrollMagic
+/* // Controllore ScrollMagic
 var controller = new ScrollMagic.Controller();
 
 // 2. Animazioni 
@@ -39,4 +39,4 @@ themeButton.addEventListener("click", function() {
     } else {
         body.setAttribute("data-theme", "dark"); // passa al tema 
     }
-});
+}); */
