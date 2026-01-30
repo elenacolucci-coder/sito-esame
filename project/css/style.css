@@ -1,12 +1,15 @@
 body { 
     font-family: 'Poppins', sans-serif; /* font sito */
-    background-color: #1a1b38;         /* Colore sfondo */
+    background-color: #000000;         /* Colore sfondo */
     color: #ffffff;                    /* Colore del testo grande */
     scroll-behavior: smooth;           /* Animazione */
 }
 
+/* NAVBAR*/
+
 .navbar {
-    transition: top 0.3s; /* transizione fluida per scomparsa/compare */
+    background-color: #000000;
+    transition: top 0.3s; /* transizione fluida */
 }
 
 .navbar .nav-link {
@@ -20,42 +23,134 @@ body {
 
 .navbar .navbar-brand {
     color: #ffffff;   /* colore del brand */
+    font-weight: 600;
 }
 
 .navbar .navbar-brand:hover {
     color: #ff007c;   /* colore passaggio del mouse */
 }
 
+/* TITOLI*/
+
 h1, h2, h3, h4 {
-    color: #ffffff;  /* Colore titoli */
-    font-weight: 700; /* grassetto */
-    margin-bottom: 20px; /* margine */
+    color: #ffffff;  
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 section {
-    padding-top: 60px;  /* Spazio superiore */
-    padding-bottom: 60px; /* Spazio inferiore */
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
+/* ABOUT ME */
+
+.about-section {
+    background-color: #000000;
+    padding: 100px 0;
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* FOTO */
+.about-image img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 6px;
+    box-shadow: none; /* niente ombre inutili */
+}
+
+/* TESTO */
+.about-text h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #e6e6e6;
+    margin-bottom: 20px;
+}
+
+.about-intro {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .about-image img {
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .about-text {
+        text-align: left;
+    }
+}
+
+/* PROGETTI */
+
 .project-card {
-    border-radius: 10px;        /* Angoli arrotondati */
-    overflow: hidden;            /* Taglia le immagini */
-    transition: transform 0.3s, box-shadow 0.3s; /* Animazione */
+    background-color: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
-    transform: translateY(-5px); /* animazione con mouse */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* ombra */
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.5);
 }
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* model-viewer */
+model-viewer {
+    width: 100%;
+    height: 280px;
+    background-color: #000000;
+}
+
+/* CAFFETTIERA */
+.caffettiera-3d {
+    width: 100%;         
+    max-width: 500px;     
+    height: 700px;        
+    margin: 0 auto;        
+}
+
+/* IMMAGINI GENERALI */
 
 img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px; /* arrotonda i bordi dell'immagine o model-viewer */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* leggera ombra */
-    opacity: 1; /* modifica fatta per far vedere subito l'immagine e model-viewer */
+    border-radius: 8px;
 }
+
+/* ANIMAZIONI*/
 
 .fade-in {
     opacity: 0;
@@ -63,20 +158,32 @@ img {
     transition: opacity 0.6s, transform 0.6s;
 }
 
+/*FOOTER */
+
 footer {
-    background-color: #1a1b38; /* Colore */
-    color: #ffffff;           /* Testo */
+    background-color: #000000;
+    color: #ffffff;
 }
 
-footer button#themeToggle {
-    margin-left: 10px;       /* Spazio tra testo e pulsante */
-}
+/* RESPONSIVE*/
 
-body[data-theme="#blue"] {
-    background-color: #1a1b38; /* Sfondo */
-    color: #f8f9fa;            /* Testo */
-}
+@media (max-width: 768px) {
 
-body[data-theme="#blue"] a {
-    color: #ffffff;             /* Colore link */
+    .about-card {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .about-text h1 {
+        font-size: 2rem;
+    }
+
+    .about-photo img {
+        margin-bottom: 30px;
+        transform: none;
+    }
+
+    model-viewer {
+        height: 220px;
+    }
 }
