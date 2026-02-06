@@ -26,20 +26,16 @@
       <a class="navbar-brand" href="index.html">
         <img src="img/logoelenanav.png" alt="Logo Elena" style="height: 40px;">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html#about">Chi sono</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#projects">Progetti</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contatti</a></li>
-      </ul>
-    </div>
+<div class="collapse navbar-collapse" id="navbarNav">
+  <div class="ms-auto d-flex gap-3">
+    <a href="chisono.html" class="btn btn-nav">Chi sono</a>
+    <a href="progetti.html" class="btn btn-nav">Progetti</a>
+    <a href="contatti.html" class="btn btn-nav">Contatti</a>
   </div>
-</header>
-      </div>
+</div>
     </div>
   </header>
 
@@ -48,7 +44,7 @@
     <h1 class="mb-4">Packaging</h1>
 
     <!-- PRIMO CAROSELLO -->
-    <div class="row align-items-center g-4 model-container ">
+    <div class="row align-items-center g-4 model-container">
       <div class="col-md-6">
         <div class="model-viewer carousel">
           <div id="carouselBiscotti" class="carousel slide" data-bs-ride="false">
@@ -87,7 +83,7 @@
 
     <!-- SECONDO CAROSELLO -->
     <div class="row align-items-center g-4 mt-5 model-container">
-      <div class="col-md-6">
+      <div class="col-md-6 model-container">
         <div class="model-viewer carousel">
           <div id="carouselVino" class="carousel slide" data-bs-ride="false">
 
@@ -126,10 +122,18 @@
       </div>
     </div>
 
-    <a href="index.html" class="btn btn-primary mt-4 btn-custom">
-      Torna alla pagina principale
+      <!-- Bottone -->
+  <div class="text-center mt-5">
+    <a href="progetti.html" class="btn btn-primary btn-custom">
+      Torna alla pagina progetti
     </a>
-  </main>
+  </div>
+
+  <section id="contact" class="container py-5 text-white text-center">
+  <h1 class="mb-3">Contatti</h1>
+  <p>Email: elena.colucci@yahoo.it</p>
+  <p>Telefono: +39 388 1837092</p>
+</section>
 
   <!-- Footer -->
   <footer class="text-white text-center py-3" style="background-color:#000">

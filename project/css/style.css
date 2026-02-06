@@ -31,6 +31,17 @@ body {
 .navbar .navbar-brand:hover {
     color: #ff007c;
 }
+.btn-nav {
+    color: #ffffff;
+    background-color: transparent;
+    padding: 6px 16px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.btn-nav:hover {
+    color: #ff007c; /* colore al passaggio del mouse */
+}
 
 /* TITOLI */
 h1, h2, h3, h4 {
@@ -304,4 +315,55 @@ footer {
 .btn-custom:hover {
   background-color: #e60070;
   border-color: #e60070;
+}
+
+.about-img-box {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 6px 20px rgba(255, 0, 124, 0.5);
+}
+
+.about-img-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-text {
+    max-width: 600px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.btn-custom {
+    background-color: #ff007c;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #d60068;
+}
+
+.contact-form .form-control {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.contact-form .form-control::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+.contact-form .form-control:focus {
+    border-color: #ff007c;
+    box-shadow: none;
+}
+
+.contact-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: #ff007c;
 }
