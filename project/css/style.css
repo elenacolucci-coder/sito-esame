@@ -8,7 +8,7 @@ body {
     text-align: justify;                /* testo giustificato */
 }
 
-/*NAVBAR*/
+/*NAVBAR (il punto prima di selettore perchè può essere assegnato a più elementi (class)*/
 .navbar {
     background-color: #000000; /* sfondo navbar */
     transition: top 0.3s;      /* animazione */
@@ -82,7 +82,7 @@ section {
     box-shadow: 0 6px 20px rgba(255, 0, 124, 0.5);
     transition: transform 0.3s;
 }
-
+/* hover è una pseudo classe che serve quando passi il mouse */
 .about-image img:hover {
     transform: scale(1.05);
 }
@@ -215,12 +215,12 @@ img {
     object-fit: cover;
     display: block;
 }
-
+/*before permette di inserire contenuti tramite css*/
 .hero::before {
     content: '';
     position: absolute;
     inset: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5); /*sfumatura*/
     z-index: 1;
 }
 
@@ -341,7 +341,7 @@ footer {
     transition: opacity 0.6s, transform 0.6s;
 }
 
-/* RESPONSIVE*/
+/* RESPONSIVE ( il sito deve adattarsi a schermi piccoli)*/
 @media (max-width: 900px) {
     .about-container {
         grid-template-columns: 1fr;
